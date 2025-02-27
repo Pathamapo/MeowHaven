@@ -1,0 +1,268 @@
+body {
+    font-family: 'Sukhumvit Set', sans-serif;
+    background-color: #fef5e7;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffcc00;
+    padding: 20px 20px; 
+}
+
+.logo {
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 0px 30px;
+}
+
+.menu .btn {
+    background-color: #003366;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 55px;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.search-bar {
+    display: flex;
+    flex-wrap: nowrap; /* ทำให้ทุกอย่างอยู่ในบรรทัดเดียวกัน */
+    justify-content: flex-start; /* จัดเรียงจากซ้ายไปขวา */
+    align-items: center; /* จัดให้ฟอร์มและตัวหนังสืออยู่กึ่งกลางแนวตั้ง */
+    gap: 8px;
+    padding: 20px;
+    background-color: #ffcc00; /* พื้นหลังสีเหลือง */
+    border-radius: 60px; /* มุมโค้งของพื้นหลัง */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    border: 12px solid #003366; /* กรอบภายนอกมีสีฟ้าและมุมโค้ง */
+}
+
+.search-bar label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px; /* ระยะห่างระหว่างตัวหนังสือและฟอร์ม */
+}
+
+.search-bar select,
+.search-bar input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 15px; /* มุมโค้งกรอบย่อย */
+    border: 1px solid #ccc;
+    width: 180px; /* ขนาดกรอบย่อย */
+}
+
+.search-bar button.search-btn {
+    background-color: #003366;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 0;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-left: auto; /* ทำให้ปุ่มค้นหาชิดขวา */
+}
+
+.search-bar button.search-btn:hover {
+    background-color: #002244; /* สีเมื่อวางเมาส์ */
+}
+
+.search-bar input[type="number"] {
+    width: 80px; /* ขนาดกรอบสำหรับจำนวนแมว */
+}
+
+
+
+.hotels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0px;
+    max-width: 1200px; /* ขนาดสูงสุด */
+    margin: 0 auto; /* จัดให้อยู่กลาง */
+}
+
+
+.hotel-card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px; /* มุมโค้ง */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.hotel-image {
+    width: 100%;  /* ให้ขยายตามความกว้างของกรอบ */
+    height: 200px;  /* กำหนดความสูงให้เท่ากันทุกภาพ */
+    object-fit: cover;  /* ป้องกันไม่ให้ภาพบิดเบือนหรือยืดหด */
+    border-radius: 8px;  /* มุมโค้งของภาพ */
+}
+
+
+.hotel-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.hotel-info h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 2px 0;
+}
+
+.hotel-info p {
+    margin: 1px 0;
+    font-size: 16px;
+}
+
+.rating {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-top: 2px;
+}
+
+.star {
+    color: gold;
+    font-size: 20px;
+}
+
+/* ใช้สีเทาสำหรับดาวที่ไม่เต็ม */
+.star:last-child {
+    color: #ccc;
+}
+
+.more-btn {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* กรอบมุมโค้ง */
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px; /* เพิ่มระยะห่างจากฟุตเตอร์ */
+}
+
+/* ใช้เมื่อคอนเทนเนอร์ของปุ่มต้องการการจัดเรียงกลาง */
+.button-container {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กลางในแนวนอน */
+    align-items: center; /* จัดให้อยู่กลางในแนวตั้ง */
+    margin-top: 30px; /* เพิ่มระยะห่างจาก .hotels */
+}
+
+
+
+/* เมื่อวางเมาส์บนปุ่ม */
+.more-btn:hover {
+    background-color: #002244; /* สีเมื่อวางเมาส์ */
+}
+
+
+/* ฟุตเตอร์ส่วนบน */
+footer {
+    background-color: #ffcc00; /* สีพื้นหลังของฟุตเตอร์ส่วนบน */
+    color: black;
+    padding: 8px 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 คอลัมน์ */
+    gap: 20px;
+    width: 100%; /* ขยายให้เต็มหน้าจอ */
+    box-sizing: border-box; /* รวม padding และ border ในขนาด */
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: disc; /* เพิ่มจุดในรายการ */
+    padding-left: 20px; /* ระยะห่างของจุด */
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ฟุตเตอร์ล่าง */
+.footer-bottom {
+    background-color: #fef5e7; /* สีพื้นหลังของ footer-bottom */
+    color: black;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* ขยายให้เต็มหน้าจอ */
+    box-sizing: border-box; /* รวม padding และ border ในขนาด */
+}
+
+.footer-bottom .logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-bottom .social-icons {
+    display: flex;
+}
+
+.footer-bottom .social-icons img {
+    width: 40px;  /* ขนาดความกว้าง */
+    height: 40px; /* ขนาดความสูง */
+    object-fit: cover;  /* ป้องกันไม่ให้ภาพบิดเบือน */
+    margin-left: 15px;  /* ระยะห่างระหว่างไอคอน */
+}
+
+.footer-bottom .social-icons img:first-child {
+    margin-left: 0;  /* ลดระยะห่างจากไอคอนแรก */
+}
+
+
+
+
+/* รองรับหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr; /* แสดงในรูปแบบคอลัมน์เดียว */
+    }
+
+    .footer-bottom {
+        flex-direction: row; /* ให้ยังคงอยู่ในแนวนอน */
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-bottom .social-icons img {
+        margin-left: 10px;
+    }
+}

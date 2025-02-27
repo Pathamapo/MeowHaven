@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeowHaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sukhumvit+Set:wght@300;400;600&family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">MeowHaven 🐱</div>
+            <div class="menu">
+                <button class="btn">ค้นหาโรงแรม</button>
+                <button class="btn">โรงแรมแมวใกล้ฉัน</button>
+                <button class="btn">เข้าสู่ระบบ 😺</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <h1>จองที่พักที่สมบูรณ์แบบ สำหรับแมวของคุณ 🐾</h1>
+        </div>
+        <div class="search-bar">
+            <label for="city">เลือกเมือง:</label>
+            <select id="city">
+                <option>เลือกเมือง</option>
+                <option>กรุงเทพฯ</option>
+                <option>เชียงใหม่</option>
+                <option>พัทยา</option>
+                <option>ศรีราชา</option>
+            </select>
+            <label for="checkin">เช็คอิน:</label>
+            <input type="date" id="checkin">
+            <label for="checkout">เช็คเอาท์:</label>
+            <input type="date" id="checkout">
+            <label for="cats">จำนวนแมว:</label>
+            <input type="number" id="cats" value="1" min="1">
+            <button class="search-btn">ค้นหา 🔍</button>
+        </div>
+        <div class="hotels">
+            <div class="hotel-card">
+                <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/chonburi/rainbow-cat/images/rainbow-cat-chonburi-nqp5p-323438940_654542273129304_7596784391578885347_n.jpg&w=640&q=100" alt="Rainbow Cat" class="hotel-image">
+                <div class="hotel-info">
+                    <h4>Rainbow Cat</h4>
+                    <p>บางแสน</p>
+                    <p>300฿</p>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/chonburi/koi-cat-hotel/images/koi-cat-hotel-chonburi-5lhtc-1.PNG&w=1024&q=100" alt="Koi Cat Hotel" class="hotel-image">
+                <div class="hotel-info">
+                    <h4>Koi Cat Hotel</h4>
+                    <p>เหมือง</p>
+                    <p>350฿</p>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                </div>
+            </div>
+        
+            <div class="hotel-card">
+                <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/chonburi/kitty-cat-hotel/images/kitty-cat-hotel-chonburi-bz82y-26849965_769238849940164_4407570107377374914_o-1024x682.jpg&w=640&q=100" alt="Kitty Cat Hotel" class="hotel-image">
+                <div class="hotel-info">
+                    <h4>Kitty Cat Hotel</h4>
+                    <p>ศรีราชา</p>
+                    <p>320฿</p>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                </div>
+            </div>
+        
+            <div class="hotel-card">
+                <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/chonburi/neighbour-cat-hotel/rooms/bunkbed-room/bunkbed-room-neighbour-cat-hotel-chonburi-wzbt4f-Bunkbed.PNG&w=640&q=100" alt="Neighbour Cat" class="hotel-image">
+                <div class="hotel-info">
+                    <h4>Neighbour Cat</h4>
+                    <p>ศรีราชา</p>
+                    <p>300฿</p>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                </div>
+            </div>
+        
+            <div class="hotel-card">
+                <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/chonburi/cat-home-pattaya/images/cat-home-pattaya-chonburi-ivwv4g-2.PNG&w=640&q=100" alt="Cat Home Pattaya" class="hotel-image">
+                <div class="hotel-info">
+                    <h4>Cat Home Pattaya</h4>
+                    <p>พัทยา</p>
+                    <p>250฿</p>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                </div>
+            </div>
+        
+            <div class="hotel-card">
+                <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/chonburi/tiny-tigers-house/images/tiny-tigers-house-chonburi-503ijk-346303700_122234834197456_5947125887129232116_n.jpg&w=640&q=100" alt="Tiny Tigers House" class="hotel-image">
+                <div class="hotel-info">
+                    <h4>Tiny Tigers House</h4>
+                    <p>แยกบายพาส</p>
+                    <p>350฿</p>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                </div>
+            </div>
+        
+            <div class="hotel-card">
+                <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/chonburi/khao-pun--khai-thoon-cat-hotel/images/khao-pun--khai-thoon-cat-hotel-chonburi-0hrpm-KhaoPun1.JPG&w=1024&q=100" alt="Khao Pun Hotel" class="hotel-image">
+                <div class="hotel-info">
+                    <h4>Khao Pun Hotel</h4>
+                    <p>บ้านสวน</p>
+                    <p>300฿</p>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                </div>
+            </div>
+        
+            <div class="hotel-card">
+                <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/chonburi/ma-non-cat-hotel-/images/ma-non-cat-hotel--chonburi-ylrdj-1.PNG&w=1024&q=100" alt="Ma-Non Cat Hotel" class="hotel-image">
+                <div class="hotel-info">
+                    <h4>Ma-Non Cat Hotel</h4>
+                    <p>พนมอง</p>
+                    <p>330฿</p>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                </div>
+            </div>
+
+            <div class="hotel-card">
+                <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/pathumthani/kiss-cat-hotel/images/kiss-cat-hotel-pathumthani-cwolr-ScreenShot2566-04-21at11.42.38.png&w=1024&q=100" alt="Ma-Non Cat Hotel" class="hotel-image">
+                <div class="hotel-info">
+                    <h4>Kiss Cat Hotel</h4>
+                    <p>ลำลูกกา</p>
+                    <p>250฿</p>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                </div>
+            </div>
+
+            <div class="hotel-card">
+                <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/nonthaburi/bed-for-cat/images/bed-for-cat-nonthaburi-gjyfu-bed-for-cat-02.jpeg&w=640&q=100" alt="Ma-Non Cat Hotel" class="hotel-image">
+                <div class="hotel-info">
+                    <h4>Bed for Cat</h4>
+                    <p>บางใหญ่</p>
+                    <p>350฿</p>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                </div>
+            </div>
+
+            <div class="hotel-card">
+                <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/bangkok/cats_gym_hotel/images/cats_gym_hotel-bangkok-twzgv-ScreenShot2566-03-11at21.56.53.png&w=1024&q=100" alt="Ma-Non Cat Hotel" class="hotel-image">
+                <div class="hotel-info">
+                    <h4>Cat's Gym Hotel</h4>
+                    <p>บางนา</p>
+                    <p>500฿</p>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                </div>
+            </div>
+
+            <div class="hotel-card">
+                <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/bangkok/moggy_the_camper/images/moggy_the_camper-bangkok-zjpco-moggy_the_camper-bangkok-e6doo-image3.png&w=1024&q=100" alt="Ma-Non Cat Hotel" class="hotel-image">
+                <div class="hotel-info">
+                    <h4>Moggy The Camper</h4>
+                    <p>รามคำแหง</p>
+                    <p>350฿</p>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <button class="more-btn">เลือกดูเพิ่มเติม</button>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footer-section">
+            <h3>เกี่ยวกับ</h3>
+            <ul>
+                <li><a href="#">เกี่ยวกับเรา</a></li>
+                <li><a href="#">ข่าวประชาสัมพันธ์</a></li>
+                <li><a href="#">บทความ</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>โรงแรมแมว สถานที่</h3>
+            <ul>
+                <li><a href="#">แผนที่โรงแรมแมว</a></li>
+                <li><a href="#">โรงแรมแมวใกล้ฉัน</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>ติดต่อ</h3>
+            <ul>
+                <li><a href="#">ติดต่อเรา</a></li>
+                <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
+                <li><a href="#">คำถามที่พบบ่อย</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>ภาษา</h3>
+            <ul>
+                <li><a href="#">ภาษาไทย</a></li>
+                <li><a href="#">English</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <!-- Footer bottom -->
+    <div class="footer-bottom">
+        <div class="logo">MeowHaven 🐱</div>
+        <div class="social-icons">
+            <img src="https://cdn-icons-png.flaticon.com/128/1384/1384005.png" alt="Facebook">
+            <img src="https://cdn-icons-png.flaticon.com/128/1384/1384015.png" alt="Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/128/3670/3670061.png" alt="LINE">
+        </div>
+    </div>
+    
+</body>
+</html>
