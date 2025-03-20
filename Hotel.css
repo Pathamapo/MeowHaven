@@ -5,9 +5,10 @@ body {
     padding: 0;
 }
 
+
 .navbar {
-    display: flex;
     font-family: 'Itim', sans-serif; 
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #ffcc00;
@@ -39,11 +40,10 @@ body {
     background-color: #003366;
     color: white;
     padding: 10px 10px;
-    border: none;
     cursor: pointer;
     border-radius: 45px;
-    font-size: 14px;
-    font-family: 'Itim', sans-serif;
+    font-size: 16px;
+    font-family: 'Itim', sans-serif; 
 }
 
 /* ปรับให้แฮมเบอร์เกอร์มีขนาดเหมาะสม */
@@ -147,6 +147,7 @@ body {
     font-size: 18px;
     margin-right: 4px; /* ลดระยะห่าง */
 }
+
 .menu-icon {
     width: 20px; /* กำหนดขนาดของไอคอน */
     height: 20px;
@@ -250,65 +251,6 @@ input:checked + .slider::before {
     transform: translateX(10px);
 }
 
-.hero {
-    text-align: center;
-    padding: 20px 20px;
-}
-
-.search-bar {
-    display: flex;
-    flex-wrap: nowrap; /* ทำให้ทุกอย่างอยู่ในบรรทัดเดียวกัน */
-    justify-content: flex-start; /* จัดเรียงจากซ้ายไปขวา */
-    align-items: center; /* จัดให้ฟอร์มและตัวหนังสืออยู่กึ่งกลางแนวตั้ง */
-    gap: 12px; /* ระยะห่างระหว่างองค์ประกอบ */
-    padding: 20px;
-    background-color: #ffcc00; /* พื้นหลังสีเหลือง */
-    border-radius: 60px; /* มุมโค้งของพื้นหลัง */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เงา */
-    margin: 20px auto;
-    width: 80%; /* ขนาดความกว้าง */
-    border: 12px solid #003366; /* กรอบภายนอกมีสีฟ้า */
-}
-
-.search-bar label {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-}
-
-.search-bar select,
-.search-bar input {
-    padding: 10px 14px; /* เพิ่ม padding เพื่อให้ป้อนข้อมูลสะดวกขึ้น */
-    font-size: 14px;
-    border-radius: 15px; /* มุมโค้งกรอบย่อย */
-    border: 1px solid #ccc;
-    width: 180px; /* ขนาดกรอบย่อย */
-    background-color: #fff; /* สีพื้นหลังกรอบ */
-    font-family: 'Itim', sans-serif; 
-
-}
-
-.search-bar button.search-btn {
-    background-color: #003366; /* สีพื้นหลังปุ่ม */
-    color: white;
-    padding: 10px 10px; /* เพิ่มขนาดปุ่ม */
-    border: none;
-    cursor: pointer;
-    margin-top: 0;
-    border-radius: 8px; /* มุมโค้งของปุ่ม */
-    font-size: 16px;
-    margin-left: auto; /* ทำให้ปุ่มค้นหาชิดขวา */
-    font-family: 'Itim', sans-serif; 
-    transition: background-color 0.3s ease; /* เพิ่มการเปลี่ยนแปลงสีเมื่อวางเมาส์ */
-}
-
-.search-bar button.search-btn:hover {
-    background-color: #002244; /* สีเมื่อวางเมาส์ */
-}
-
-.search-bar input[type="number"] {
-    width: 80px; /* ขนาดกรอบสำหรับจำนวนแมว */
-}
 #search-box {
     padding: 8px 18px;
     font-size: 16px;
@@ -321,11 +263,6 @@ input:checked + .slider::before {
     outline: none; /* ลบเส้นกรอบเมื่อคลิก */
     transition: all 0.3s ease; /* การเปลี่ยนแปลงที่นุ่มนวล */
     color: #333; /* สีตัวอักษร */
-}
-
-
-.btn:hover {
-    background-color: #8279cb; /* สีเมื่อวางเมาส์ */
 }
 
 .back-home-btn {
@@ -346,115 +283,239 @@ input:checked + .slider::before {
     background-color: #002244; /* สีเมื่อวางเมาส์ */
 }
 
-.hotels {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 0px;
-    max-width: 1200px; /* ขนาดสูงสุด */
-    margin: 0 auto; /* จัดให้อยู่กลาง */
+.container {
+    width: 90%; /* ความกว้างที่คุณต้องการ */
+    max-width: 900px; /* จำกัดความกว้างสูงสุด */
+    margin: 0 auto; /* จัดให้อยู่กลางถ้ามีพื้นที่เหลือ */
 }
-
-
-.hotel-card {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 20px; /* มุมโค้ง */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border: 1px solid #ccc;
-    text-decoration: none;
-}
-.hotel-card:hover {
-    transform: scale(1.05); /* ขยายขนาดขึ้นเล็กน้อย */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
-}
-
-.hotel-card:active {
-    transform: scale(0.95); /* หดลงเล็กน้อยตอนกด */
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3); /* เงาลึกขึ้น */
-}
-
-/* สไตล์ดาว */
-.star {
-    color: gold;
-    font-size: 20px;
-}
-
-.hotel-image {
-    width: 100%;  /* ให้ขยายตามความกว้างของกรอบ */
-    height: 200px;  /* กำหนดความสูงให้เท่ากันทุกภาพ */
-    object-fit: cover;  /* ป้องกันไม่ให้ภาพบิดเบือนหรือยืดหด */
-    border-radius: 8px;  /* มุมโค้งของภาพ */
-}
-
-
-.hotel-info {
+/* ส่วน header โรงแรม */
+.hotel-header {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    color: black;
-}
-
-.hotel-info h4 {
-    font-size: 15px;
-    font-weight: bold;
-    margin: 2px 0;
-    color: black;
-}
-
-.hotel-info p {
-    margin: 1px 0;
-    font-size: 16px;
-    color: black;
-}
-
-.rating {
-    display: flex;
-    justify-content: flex-end;
-    gap: 5px;
-    margin-top: 2px;
-}
-
-.star {
-    color: gold;
-    font-size: 20px;
-}
-
-/* ใช้สีเทาสำหรับดาวที่ไม่เต็ม */
-.star:last-child {
-    color: #ccc;
-}
-
-.more-btn {
-    background-color: #003366;
+    align-items: center;
+    background-color: #0D1321;
     color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* แกลเลอรีรูปภาพ */
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.image-gallery img {
+    width: 30%; /* ทำให้กว้างเต็มกรอบ */
+    height: 30%; /* ทำให้สูงเต็มกรอบ */
+    object-fit: cover; /* ขยายภาพให้เต็มกรอบ โดยไม่เสียสัดส่วน */
+    border-radius: 15px; /* มุมโค้ง */
+    border: 4px solid #ffcc00; /* กรอบสีน้ำเงิน */
+}
+
+
+/* ปรับขนาดหัวข้อโรงแรม */
+.hotel-info {
+    text-align: left;
+    width: 90%;
+    padding-left: 20px;
+}
+.info-container {
+    display: flex;
+    justify-content: flex-start; /* ให้ข้อความอยู่ซ้ายสุด */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+    width: 100%; /* ให้เต็มความกว้าง */
+}
+
+.info-container p {
+    margin: 0; /* ลบระยะห่างบนและล่างของพี */
+    font-size: 18px; /* เพิ่มขนาดตัวอักษร */
+}
+
+.info-container .btn {
+    margin-left: auto; /* ให้ปุ่มอยู่ขวาสุด */
+}
+
+.hotel-info h1 {
+    font-size: 28px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.stars {
+    color: #FFC107;
+    margin-left: 10px;
+}
+
+/* ปุ่ม */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     padding: 10px 20px;
+}
+
+.btn {
+    background-color: #FFC107;
     border: none;
-    border-radius: 20px; /* กรอบมุมโค้ง */
+    padding: 8px 15px;
+    border-radius: 15px;
     cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 20px; /* เพิ่มระยะห่างจากฟุตเตอร์ */
+    font-weight: bold;
+    font-size: 14px;
     font-family: 'Itim', sans-serif; 
 }
 
-/* ใช้เมื่อคอนเทนเนอร์ของปุ่มต้องการการจัดเรียงกลาง */
-.button-container {
+.btnHo {
+    background-color: #FFC107;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    border: 3px solid #003366; /* ขอบสีน้ำเงินเริ่มต้น */    font-family: 'Itim', sans-serif; /* เปลี่ยนฟอนต์ในปุ่ม */
+    display: block; /* ทำให้ปุ่มเป็น block เพื่อให้สามารถจัดกลางได้ */
+    margin: 20px auto; /* กำหนดระยะห่างด้านบนและล่าง และให้ปุ่มอยู่กลาง */
+}
+.btnHo:hover {
+    background: white; /* เปลี่ยนพื้นหลังเป็นสีขาวเมื่อ hover */
+    color: #000000; /* เปลี่ยนตัวอักษรเป็นสีเขียว */
+    border-color: #003366; /* เปลี่ยนขอบเป็นสีน้ำเงิน */
+}
+
+.btn-secondary {
+    background-color: #3366FF;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.room-list {
     display: flex;
-    justify-content: center; /* จัดให้อยู่กลางในแนวนอน */
-    align-items: center; /* จัดให้อยู่กลางในแนวตั้ง */
-    margin-top: 30px; /* เพิ่มระยะห่างจาก .hotels */
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.room-card {
+    display: flex;
+    background: #0B132B;
+    border-radius: 20px;
+    padding: 15px;
+    width: 90%;
+    max-width: 600px;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.room-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.room-card::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 26px;
+    z-index: -1;
+}
+
+.room-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3.5px solid #FDC500; /* กรอบเหลือง */
+    transition: border 0.3s;
+}
+
+.room-card img:hover {
+    border-color: white; /* เปลี่ยนกรอบเป็นสีขาวเมื่อ hover */
+}
+
+.room-info {
+    flex: 1;
+    color: white;
+}
+
+.room-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.room-info p {
+    margin: 5px 0 10px;
+    font-size: 1em;
+}
+
+.btn-detail, .btn-book {
+    border: none;
+    padding: 3px 8px;
+    font-size: 15px;
+    font-family: 'Itim', sans-serif;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-detail {
+    background: #FDC500; /* สีเหลือง */
+    color: black;
+}
+
+.btn-detail:hover {
+    background: white; /* เปลี่ยนพื้นหลังเป็นสีขาวเมื่อ hover */
+    color: #FDC500; /* เปลี่ยนตัวอักษรเป็นสีเหลือง */
+    transform: scale(1.05);
+}
+
+.btn-book {
+    background: #00C851;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.btn-book:hover {
+    background: #00A745;
+    transform: scale(1.05);
+}
+
+.availability {
+    background: #FEDDBE;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    align-self: flex-start;
+    transition: background 0.3s;
+}
+
+.availability:hover {
+    background: white; /* เปลี่ยนพื้นหลังเป็นสีขาวเมื่อ hover */
+    color: #FDC500; /* เปลี่ยนตัวอักษรเป็นสีเหลือง */
 }
 
 
 
-/* เมื่อวางเมาส์บนปุ่ม */
-.more-btn:hover {
-    background-color: #002244; /* สีเมื่อวางเมาส์ */
-}
 
-
-/* ฟุตเตอร์ส่วนบน */
 footer {
     background-color: #ffcc00; /* สีพื้นหลังของฟุตเตอร์ส่วนบน */
     color: black;
@@ -521,11 +582,6 @@ footer {
 .social-icons img:hover {
     transform: scale(1.1); /* ทำให้ขยายเล็กน้อยเวลา hover */
 }
-
-
-
-
-
 /* สำหรับแท็บเล็ต (หน้าจอขนาดไม่เกิน 1024px) */
 @media (max-width: 1024px) {
     .navbar {
@@ -609,6 +665,4 @@ footer {
         justify-content: center;
     }
 }
-
-
 

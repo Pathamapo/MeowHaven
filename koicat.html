@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeowHaven</title>
+    <link rel="stylesheet" href="Hotel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sukhumvit+Set:wght@300;400;600&family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">MeowHaven 🐱</div>
+            <div class="right-menu">
+                <div class="menu">
+                    <button class="btn" id="hotel-search-btn" onclick="toggleSearch()">ค้นหาโรงแรม</button>
+
+<div id="search-container" class="search-container" style="display: none;">
+    <input type="text" id="search-box" placeholder="ค้นหาโรงแรม...">
+    <button class="btn" onclick="submitSearch()">🔎</button>
+</div>
+
+                    <button class="btn">โรงแรมแมวใกล้ฉัน</button>
+                    <a href="login.html">
+                        <button class="btn">เข้าสู่ระบบ 😺</button>
+                    </a>
+                </div>
+                <button id="hamburgerBtn" class="hamburger-btn">
+                    <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+            </div>
+        </div> 
+    
+        <!-- Sidebar Menu -->
+        <!-- Sidebar Menu -->
+<div id="menu" class="sidebar">
+    <div class="menu-header">
+        <button id="closeMenu" class="close-menu-btn">
+            <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
+    </div>
+
+    <ul class="menu-items">
+        <li class="menu-section">เข้าสู่ระบบ</li>
+        <li class="menu-item"><a href="#" class="menu-link"><span>🔑</span> เข้าสู่ระบบ <span class="arrow">›</span></a></li>
+
+        <li class="menu-section">สถานที่</li>
+        <li class="menu-item"><a href="#" class="menu-link"><span>📍</span> แผนที่โรงแรมแมว <span class="arrow">›</span></a></li>
+        <li class="menu-item"><a href="#" class="menu-link"><span>🏨</span> โรงแรมแมวใกล้ฉัน <span class="arrow">›</span></a></li>
+
+        <li class="menu-section">ติดต่อ</li>
+        <li class="menu-item">
+            <a href="#" class="menu-link">
+                <img src="https://cdn-icons-png.flaticon.com/128/386/386220.png" alt="ติดต่อเรา" class="menu-icon"> ติดต่อเรา <span class="arrow">›</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="menu-link">
+                <img src="https://cdn-icons-png.flaticon.com/128/2504/2504903.png" alt="Facebook" class="menu-icon"> Facebook <span class="arrow">›</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="menu-link">
+                <img src="https://cdn-icons-png.flaticon.com/128/15713/15713420.png" alt="@meowhaven" class="menu-icon"> @meowhaven <span class="arrow">›</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="menu-link">
+                <img src="https://cdn-icons-png.flaticon.com/128/2504/2504922.png" alt="meowhavennie" class="menu-icon"> meowhavennie <span class="arrow">›</span>
+            </a>
+        </li>
+        <li class="menu-section">เกี่ยวกับ</li>
+        <li class="menu-item"><a href="#" class="menu-link">สำหรับโรงแรม <span class="arrow">›</span></a></li>
+        <li class="menu-item"><a href="#" class="menu-link">เกี่ยวกับเรา <span class="arrow">›</span></a></li>
+        <li class="menu-item"><a href="#" class="menu-link">ข่าวประชาสัมพันธ์ <span class="arrow">›</span></a></li>
+        <li class="menu-item"><a href="#" class="menu-link">บทความ <span class="arrow">›</span></a></li>
+
+        <li class="menu-section">ภาษา</li>
+        <li class="language-switch">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </li>
+    </ul>
+</div>
+<a href="Home.html">
+    <button class="back-home-btn">⬅</button>
+</a>
+    </header>
+    <main>
+        <div class="container">
+            <div class="hotel-header">
+                <div class="image-gallery">
+                    <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/chonburi/koi-cat-hotel/images/koi-cat-hotel-chonburi-5lhtc-1.PNG&w=1024&q=100" alt="Cat 1">
+                    <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/chonburi/koi-cat-hotel/images/koi-cat-hotel-chonburi-w1v93-6.PNG&w=1024&q=100" alt="Cat 2">
+                    <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/chonburi/koi-cat-hotel/rooms/standard-connecting-room-/standard-connecting-room--koi-cat-hotel-chonburi-31wc7-ss.PNG&w=640&q=100" alt="Cat 3">
+                </div>
+                <div class="hotel-info">
+                    <h1>Koi Cat Hotel <span class="stars">⭐⭐⭐⭐</span></h1>
+                    <div class="info-container">
+                        <p>เหมือง</p>
+                        <button class="btn">อ่านรีวิว</button>
+                    </div>
+                </div>
+            </div>
+            <button class="btnHo">เกี่ยวกับโรงแรมนี้</button>
+    
+            <div class="room-list">
+                <div class="room-card">
+                    <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/chonburi/koi-cat-hotel/rooms/standard-room/standard-room-koi-cat-hotel-chonburi-thl3w-s.PNG&w=640&q=100" alt="Standard Room">
+                    <div class="room-info">
+                        <h2>Standard room</h2>
+                        <p>300฿</p>
+                        <button class="btn-detail">รายละเอียด</button>
+                        <button class="btn-book">จองเลย</button>
+                    </div>
+                    <span class="availability">ว่าง 8 ห้อง</span>
+                </div>
+    
+                <div class="room-card">
+                    <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/chonburi/koi-cat-hotel/rooms/vip-connecting-room/vip-connecting-room-koi-cat-hotel-chonburi-6cv5vj-vv.PNG&w=640&q=100" alt="VIP Room">
+                    <div class="room-info">
+                        <h2>VIP room</h2>
+                        <p>550฿</p>
+                        <button class="btn-detail">รายละเอียด</button>
+                        <button class="btn-book">จองเลย</button>
+                    </div>
+                    <span class="availability">ว่าง 3 ห้อง</span>
+                </div>
+    
+                <div class="room-card">
+                    <img src="https://cattyhotels.com/_vercel/image?url=https://vxihgoizwagzpzjnsoxa.supabase.co/storage/v1/object/public/hotels/chonburi/koi-cat-hotel/rooms/vvip-room/vvip-room-koi-cat-hotel-chonburi-if1ilf-vvip.jpg&w=640&q=100" alt="Family Room">
+                    <div class="room-info">
+                        <h2>Family room</h2>
+                        <p>650฿</p>
+                        <button class="btn-detail">รายละเอียด</button>
+                        <button class="btn-book">จองเลย</button>
+                    </div>
+                    <span class="availability">ว่าง 2 ห้อง</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h3>เกี่ยวกับ</h3>
+            <ul>
+                <li><a href="#">เกี่ยวกับเรา</a></li>
+                <li><a href="#">ข่าวประชาสัมพันธ์</a></li>
+                <li><a href="#">บทความ</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>โรงแรมแมว สถานที่</h3>
+            <ul>
+                <li><a href="#">แผนที่โรงแรมแมว</a></li>
+                <li><a href="#">โรงแรมแมวใกล้ฉัน</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>ติดต่อ</h3>
+            <ul>
+                <li><a href="#">ติดต่อเรา</a></li>
+                <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
+                <li><a href="#">คำถามที่พบบ่อย</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>ภาษา</h3>
+            <ul>
+                <li><a href="#">ภาษาไทย</a></li>
+                <li><a href="#">English</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <!-- Footer bottom -->
+    <div class="footer-bottom">
+        <div class="logo">MeowHaven 🐱</div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/byun.yeolar/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/1384/1384005.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/p_yeonaaee/?hl=th" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/1384/1384015.png" alt="Instagram">
+            </a>
+            <a href="https://line.me/ti/p/~meowhaven" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670061.png" alt="LINE">
+            </a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
