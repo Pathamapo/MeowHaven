@@ -20,22 +20,21 @@ body {
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
     padding: 0px 30px;
-    color: black; /* กำหนดสีของข้อความ */
-    text-decoration: none; /* ทำให้ไม่มีขีดเส้นใต้เมื่อใส่ลิงก์ */
+    color: black; 
+    text-decoration: none;
 }
 
 
-/* จัดเรียงปุ่มเมนูกับแฮมเบอร์เกอร์ให้ติดกันทางขวา */
 .right-menu {
     display: flex;
     align-items: center;
-    gap: 10px; /* เว้นระยะห่างระหว่างปุ่มเมนูและแฮมเบอร์เกอร์ */
+    gap: 10px; 
 }
 
 .menu {
     display: flex;
     align-items: center;
-    gap: 5px; /* ปรับช่องว่างระหว่างปุ่ม */
+    gap: 5px;
 }
 
 .menu .btn {
@@ -50,7 +49,6 @@ body {
 
 }
 
-/* ปรับให้แฮมเบอร์เกอร์มีขนาดเหมาะสม */
 .hamburger-btn {
     background: none;
     border: none;
@@ -72,15 +70,14 @@ body {
 }
 
 
-/* Sidebar animation */
 .sidebar {
     position: fixed;
     top: 0;
     right: 0;
     width: 280px;
     height: 100%;
-    background-color: #d9d9d9; /* เทาอ่อน */
-    border-radius: 20px 0 0 20px; /* มุมโค้งด้านซ้าย */
+    background-color: #d9d9d9; 
+    border-radius: 20px 0 0 20px; 
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
@@ -88,7 +85,7 @@ body {
     overflow-y: auto;
     padding: 16px;
 }
-/* ปุ่มปิดเมนู */
+
 .menu-header {
     display: flex;
     justify-content: flex-end;
@@ -104,18 +101,17 @@ body {
 .close-icon {
     width: 30px;
     height: 30px;
-    color: #ff4d4d; /* สีแดง */
+    color: #ff4d4d; 
 }
-/* ส่วนหัวแต่ละหมวด */
+
 .menu-section {
     font-size: 16px;
     font-weight: bold;
     color: #333;
     padding: 8px 16px;
-    margin-top: -5px; /* ขยับขึ้น */
+    margin-top: -5px; 
 }
 
-/* Menu Items */
 .menu-items {
     list-style: none;
     padding: 0;
@@ -147,19 +143,17 @@ body {
     background: #f0f0f0;
 }
 .menu-icon {
-    width: 20px; /* กำหนดขนาดของไอคอน */
+    width: 20px; 
     height: 20px;
-    margin-right: 10px; /* เพิ่มช่องว่างระหว่างไอคอนและข้อความ */
-    vertical-align: middle; /* จัดแนวไอคอนให้ตรงกลาง */
+    margin-right: 10px; 
+    vertical-align: middle; 
 }
 
-/* ไอคอน */
 .menu-link span:first-child {
     font-size: 18px;
-    margin-right: 4px; /* ลดระยะห่าง */
+    margin-right: 4px; 
 }
 
-/* ลูกศรขวา */
 .arrow {
     margin-left: auto; 
     font-size: 16px;
@@ -221,12 +215,11 @@ input:checked + .slider::before {
     left: 32px;
     background: url("https://cdn-icons-png.flaticon.com/128/14539/14539032.png") center/cover no-repeat;
 }
-/* Active menu state */
+
 .sidebar.show {
     transform: translateX(0);
 }
 
-/* Sidebar overlay */
 .sidebar-overlay {
     position: fixed;
     top: 0;
@@ -245,7 +238,6 @@ input:checked + .slider::before {
     visibility: visible;
 }
 
-/* Animations for Menu */
 .menu-link span {
     transition: transform 0.3s ease;
 }
@@ -262,37 +254,37 @@ input:checked + .slider::before {
 #search-box {
     padding: 8px 18px;
     font-size: 16px;
-    border-radius: 20px; /* ขอบโค้งมน */
-    border: 2px solid #ffcc00; /* กรอบสีเหลือง */
-    background-color: #fff; /* พื้นหลังสีขาว */
-    width: 100%; /* ขยายความกว้างเต็มที่ */
-    max-width: 500px; /* จำกัดความกว้างสูงสุด */
-    margin: 10px auto; /* จัดให้อยู่กลางหน้า */
-    outline: none; /* ลบเส้นกรอบเมื่อคลิก */
-    transition: all 0.3s ease; /* การเปลี่ยนแปลงที่นุ่มนวล */
-    color: #333; /* สีตัวอักษร */
+    border-radius: 20px; 
+    border: 2px solid #ffcc00; 
+    background-color: #fff; 
+    width: 100%;
+    max-width: 500px; 
+    margin: 10px auto; 
+    outline: none; 
+    transition: all 0.3s ease; 
+    color: #333; 
 }
 
 .back-home-btn {
-    background-color: #ffcc00; /* สีน้ำเงิน */
+    background-color: #ffcc00; 
     color: black;
     padding: 10px 15px;
     border: none;
     cursor: pointer;
     border-radius: 10px;
     font-size: 16px;
-    position: fixed; /* ใช้ตำแหน่ง fixed เพื่อให้ปุ่มอยู่ในตำแหน่งคงที่ */
-    top: 105px; /* ห่างจากด้านบน 20px */
-    left: 30px; /* ห่างจากด้านซ้าย 30px */
+    position: fixed; 
+    top: 105px; 
+    left: 30px; 
     transition: background-color 0.3s ease;
 }
 
 .back-home-btn:hover {
-    background-color: #002244; /* สีเมื่อวางเมาส์ */
+    background-color: #002244; 
 }
 
 
-.login-container {
+.login-container { /*เข้าสู่ระบบใหญ่*/
     background: white;
     padding: 30px;
     border-radius: 20px;
@@ -300,9 +292,9 @@ input:checked + .slider::before {
     text-align: center;
     width: 80%;
     max-width: 500px;
-    margin: 20px auto; /* ระยะห่างจาก Navbar */
+    margin: 20px auto; 
     top: 20px;
-    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่างจาก footer */
+    margin-bottom: 20px; 
 }
 
 h2 {
@@ -311,49 +303,44 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* เพิ่มระยะห่างระหว่าง input และ label */
-.input-group {
+.input-group { /*อีเมลรหัส*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    gap: 15px; /* เพิ่มระยะห่างระหว่าง input แต่ละตัว */
+    gap: 15px; 
 }
 
-/* ระยะห่างระหว่าง label และ input */
 .input-group label {
     font-size: 14px;
     color: #333;
     margin-bottom: 5px;
 }
 
-/* เพิ่มระยะห่างระหว่าง input แต่ละตัว */
 .input-group input {
-    width: 100%; /* ขยายให้เต็มความกว้าง */
-    padding: 12px 8px; /* ปรับ padding ให้น้อยลง */
-    font-size: 14px; /* ปรับขนาดตัวอักษร */
-    border-radius: 20px; /* ทำมุมโค้งมน */
+    width: 100%; 
+    padding: 12px 8px; 
+    font-size: 14px; 
+    border-radius: 20px; 
     border: 2px solid #ffcc00;
     background-color: #fff;
     outline: none;
     transition: 0.3s;
-    margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่าง */
+    margin-bottom: 10px; 
     font-family: 'Itim', sans-serif; 
 }
 
 
-/* ระยะห่างระหว่าง input เมื่อมี focus */
 .input-group input:focus {
     border-color: #ff9900;
     box-shadow: 0 0 8px rgba(255, 153, 0, 0.5);
 }
 
-
 .btn {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
-    border-radius: 25px; /* มุมโค้งมน */
+    border-radius: 25px; 
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: inline-flex;
@@ -362,39 +349,39 @@ h2 {
 }
 
 .btn.blue {
-    background-color: #0770e0; /* สีน้ำเงิน */
+    background-color: #0770e0; 
     color: white;
     font-family: 'Itim', sans-serif; 
 
 }
 
 .btn.yellow {
-    background-color: #ffcc00; /* สีเหลือง */
+    background-color: #ffcc00;
     color: black;
     font-family: 'Itim', sans-serif; 
 
 }
 
 .btn.blue:hover {
-    background-color: #0056b3; /* เปลี่ยนเป็นสีเข้มเมื่อ hover */
+    background-color: #0056b3; 
 }
 
 .btn.yellow:hover {
-    background-color: #e6b800; /* เปลี่ยนเป็นสีเข้มเมื่อ hover */
+    background-color: #e6b800; 
 }
 
 .btn.gray {
-    background-color: #808080; /* สีเทา */
+    background-color: #808080;
     color: white;
     font-family: 'Itim', sans-serif; 
 
 }
 
 .btn.gray:hover {
-    background-color: #666666; /* สีเทาเข้มเมื่อ hover */
+    background-color: #666666; 
 }
 
-/* เพิ่มเงาให้ปุ่ม */
+
 .btn:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -402,31 +389,29 @@ h2 {
 .social-login {
     display: flex;
     justify-content: center;
-    gap: 15px; /* เว้นระยะห่างระหว่างไอคอน */
+    gap: 15px; 
     margin-top: 20px;
 }
 
 .social-login img {
-    width: 40px;  /* กำหนดขนาดของไอคอน */
-    height: 40px; /* กำหนดขนาดของไอคอน */
-    transition: transform 0.3s ease; /* เพิ่มการเปลี่ยนแปลงขนาดเมื่อ hover */
+    width: 40px;  
+    height: 40px; 
+    transition: transform 0.3s ease; /
 }
 
 .social-login img:hover {
-    transform: scale(1.1); /* ขยายเล็กน้อยเมื่อ hover */
+    transform: scale(1.1); 
 }
 
-
-
 footer {
-    background-color: #ffcc00; /* สีพื้นหลังของฟุตเตอร์ส่วนบน */
+    background-color: #ffcc00; 
     color: black;
     padding: 8px 60px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 คอลัมน์ */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
-    width: 100%; /* ขยายให้เต็มหน้าจอ */
-    box-sizing: border-box; /* รวม padding และ border ในขนาด */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-section {
@@ -440,8 +425,8 @@ footer {
 }
 
 .footer-section ul {
-    list-style-type: disc; /* เพิ่มจุดในรายการ */
-    padding-left: 20px; /* ระยะห่างของจุด */
+    list-style-type: disc;
+    padding-left: 20px; 
 }
 
 .footer-section ul li {
@@ -457,35 +442,34 @@ footer {
     text-decoration: underline;
 }
 
-/* ฟุตเตอร์ล่าง */
 .footer-bottom {
-    background-color: #fef5e7; /* สีพื้นหลังของ footer-bottom */
+    background-color: #fef5e7; 
     color: black;
     padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* ขยายให้เต็มหน้าจอ */
-    box-sizing: border-box; /* รวม padding และ border ในขนาด */
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .social-icons {
     display: flex;
-    justify-content: center; /* จัดให้อยู่ตรงกลาง */
-    gap: 15px; /* ปรับระยะห่างระหว่างไอคอน */
+    justify-content: center; 
+    gap: 15px; 
 }
 
 .social-icons img {
-    width: 32px; /* ปรับขนาดไอคอน */
+    width: 32px; 
     height: 32px;
     transition: transform 0.2s ease-in-out;
 }
 
 .social-icons img:hover {
-    transform: scale(1.1); /* ทำให้ขยายเล็กน้อยเวลา hover */
+    transform: scale(1.1); 
 }
 
-/* สำหรับแท็บเล็ต (หน้าจอขนาดไม่เกิน 1024px) */
+
 @media (max-width: 1024px) {
     .navbar {
         flex-direction: column;
@@ -494,11 +478,11 @@ footer {
     }
 
     .menu {
-        display: none; /* ซ่อนเมนูหลักและใช้แฮมเบอร์เกอร์เมนูแทน */
+        display: none; 
     }
 
     .hamburger-btn {
-        display: block; /* แสดงปุ่มแฮมเบอร์เกอร์ */
+        display: block; 
     }
 
     .search-bar {
@@ -512,11 +496,10 @@ footer {
     }
 
     footer {
-        grid-template-columns: repeat(2, 1fr); /* เปลี่ยนเป็น 2 คอลัมน์ */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-/* สำหรับโทรศัพท์มือถือ (หน้าจอขนาดไม่เกิน 768px) */
 @media (max-width: 768px) {
     .navbar {
         padding: 10px;
@@ -551,11 +534,11 @@ footer {
     }
 
     .hotels {
-        grid-template-columns: 1fr; /* เปลี่ยนเป็น 1 คอลัมน์ */
+        grid-template-columns: 1fr; 
     }
 
     footer {
-        grid-template-columns: 1fr; /* เหลือ 1 คอลัมน์ */
+        grid-template-columns: 1fr; 
         text-align: center;
     }
 

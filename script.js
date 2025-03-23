@@ -1,4 +1,4 @@
-const menu = document.getElementById("menu");
+const menu = document.getElementById("menu"); //แฮมเบอร์เกอร์
 const hamburgerBtn = document.getElementById("hamburgerBtn");
 const closeMenu = document.getElementById("closeMenu");
 
@@ -11,22 +11,14 @@ closeMenu.addEventListener("click", () => {
 });
 
 
-function toggleSearch() {
-    // ซ่อนปุ่มค้นหาโรงแรม
+function toggleSearch() { // ซ่อนปุ่มค้นหาโรงแรม
     document.getElementById("hotel-search-btn").style.display = "none";
-    
-    // แสดงช่องค้นหา
-    var searchContainer = document.getElementById("search-container");
+    var searchContainer = document.getElementById("search-container"); // แสดงช่องค้นหา
     searchContainer.style.display = "flex";
 }
 
 function submitSearch() {
-    // คุณสามารถเพิ่มฟังก์ชันค้นหาจริงที่นี่
-    
-    // ทำให้ปุ่มค้นหากลับมา
-    document.getElementById("hotel-search-btn").style.display = "inline-block"; 
-    
-    // ซ่อนช่องค้นหา
+    document.getElementById("hotel-search-btn").style.display = "inline-block";  // ทำให้ปุ่มค้นหากลับมา
     var searchContainer = document.getElementById("search-container");
     searchContainer.style.display = "none";
 }

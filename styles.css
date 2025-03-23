@@ -22,17 +22,16 @@ body {
     padding: 0px 30px;
 }
 
-/* จัดเรียงปุ่มเมนูกับแฮมเบอร์เกอร์ให้ติดกันทางขวา */
 .right-menu {
     display: flex;
     align-items: center;
-    gap: 10px; /* เว้นระยะห่างระหว่างปุ่มเมนูและแฮมเบอร์เกอร์ */
+    gap: 10px;
 }
 
 .menu {
     display: flex;
     align-items: center;
-    gap: 5px; /* ปรับช่องว่างระหว่างปุ่ม */
+    gap: 5px;
 }
 
 .menu .btn {
@@ -46,7 +45,6 @@ body {
     font-family: 'Itim', sans-serif;
 }
 
-/* ปรับให้แฮมเบอร์เกอร์มีขนาดเหมาะสม */
 .hamburger-btn {
     background: none;
     border: none;
@@ -67,16 +65,14 @@ body {
     transform: rotate(90deg);
 }
 
-
-/* Sidebar animation */
 .sidebar {
     position: fixed;
     top: 0;
     right: 0;
     width: 280px;
     height: 100%;
-    background-color: #d9d9d9; /* เทาอ่อน */
-    border-radius: 20px 0 0 20px; /* มุมโค้งด้านซ้าย */
+    background-color: #d9d9d9; 
+    border-radius: 20px 0 0 20px;
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
@@ -84,7 +80,7 @@ body {
     overflow-y: auto;
     padding: 16px;
 }
-/* ปุ่มปิดเมนู */
+
 .menu-header {
     display: flex;
     justify-content: flex-end;
@@ -100,18 +96,17 @@ body {
 .close-icon {
     width: 30px;
     height: 30px;
-    color: #ff4d4d; /* สีแดง */
+    color: #ff4d4d; 
 }
-/* ส่วนหัวแต่ละหมวด */
+
 .menu-section {
     font-size: 16px;
     font-weight: bold;
     color: #333;
     padding: 8px 16px;
-    margin-top: -5px; /* ขยับขึ้น */
+    margin-top: -5px; 
 }
 
-/* Menu Items */
 .menu-items {
     list-style: none;
     padding: 0;
@@ -142,20 +137,17 @@ body {
     background: #f0f0f0;
 }
 
-/* ไอคอน */
 .menu-link span:first-child {
     font-size: 18px;
-    margin-right: 4px; /* ลดระยะห่าง */
+    margin-right: 4px; 
 }
 .menu-icon {
-    width: 20px; /* กำหนดขนาดของไอคอน */
+    width: 20px; 
     height: 20px;
-    margin-right: 10px; /* เพิ่มช่องว่างระหว่างไอคอนและข้อความ */
-    vertical-align: middle; /* จัดแนวไอคอนให้ตรงกลาง */
+    margin-right: 10px; 
+    vertical-align: middle;
 }
 
-
-/* ลูกศรขวา */
 .arrow {
     margin-left: auto; 
     font-size: 16px;
@@ -217,12 +209,11 @@ input:checked + .slider::before {
     left: 32px;
     background: url("https://cdn-icons-png.flaticon.com/128/14539/14539032.png") center/cover no-repeat;
 }
-/* Active menu state */
+
 .sidebar.show {
     transform: translateX(0);
 }
 
-/* Sidebar overlay */
 .sidebar-overlay {
     position: fixed;
     top: 0;
@@ -241,7 +232,6 @@ input:checked + .slider::before {
     visibility: visible;
 }
 
-/* Animations for Menu */
 .menu-link span {
     transition: transform 0.3s ease;
 }
@@ -250,24 +240,24 @@ input:checked + .slider::before {
     transform: translateX(10px);
 }
 
-.hero {
+.hero { /*จองที่พักที่สมบูรณ์แบบ สำหรับแมวของคุณ*/
     text-align: center;
     padding: 20px 20px;
 }
 
-.search-bar {
+.search-bar { /*เลือกเมืองเชคอินเอ้าค์*/
     display: flex;
-    flex-wrap: nowrap; /* ทำให้ทุกอย่างอยู่ในบรรทัดเดียวกัน */
-    justify-content: flex-start; /* จัดเรียงจากซ้ายไปขวา */
-    align-items: center; /* จัดให้ฟอร์มและตัวหนังสืออยู่กึ่งกลางแนวตั้ง */
-    gap: 12px; /* ระยะห่างระหว่างองค์ประกอบ */
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
     padding: 20px;
-    background-color: #ffcc00; /* พื้นหลังสีเหลือง */
-    border-radius: 60px; /* มุมโค้งของพื้นหลัง */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เงา */
+    background-color: #ffcc00; 
+    border-radius: 60px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     margin: 20px auto;
-    width: 80%; /* ขนาดความกว้าง */
-    border: 12px solid #003366; /* กรอบภายนอกมีสีฟ้า */
+    width: 80%; 
+    border: 12px solid #003366; 
 }
 
 .search-bar label {
@@ -278,72 +268,71 @@ input:checked + .slider::before {
 
 .search-bar select,
 .search-bar input {
-    padding: 10px 14px; /* เพิ่ม padding เพื่อให้ป้อนข้อมูลสะดวกขึ้น */
+    padding: 10px 14px;
     font-size: 14px;
-    border-radius: 15px; /* มุมโค้งกรอบย่อย */
+    border-radius: 15px; 
     border: 1px solid #ccc;
-    width: 180px; /* ขนาดกรอบย่อย */
-    background-color: #fff; /* สีพื้นหลังกรอบ */
+    width: 180px; 
+    background-color: #fff;
     font-family: 'Itim', sans-serif; 
 
 }
 
 .search-bar button.search-btn {
-    background-color: #003366; /* สีพื้นหลังปุ่ม */
+    background-color: #003366; 
     color: white;
-    padding: 10px 10px; /* เพิ่มขนาดปุ่ม */
+    padding: 10px 10px; 
     border: none;
     cursor: pointer;
     margin-top: 0;
-    border-radius: 8px; /* มุมโค้งของปุ่ม */
+    border-radius: 8px; 
     font-size: 16px;
-    margin-left: auto; /* ทำให้ปุ่มค้นหาชิดขวา */
+    margin-left: auto; 
     font-family: 'Itim', sans-serif; 
-    transition: background-color 0.3s ease; /* เพิ่มการเปลี่ยนแปลงสีเมื่อวางเมาส์ */
+    transition: background-color 0.3s ease; 
 }
 
 .search-bar button.search-btn:hover {
-    background-color: #002244; /* สีเมื่อวางเมาส์ */
+    background-color: #002244; 
 }
 
 .search-bar input[type="number"] {
-    width: 80px; /* ขนาดกรอบสำหรับจำนวนแมว */
+    width: 80px; 
 }
-#search-box {
+#search-box { /*ค้นหาโรงแรม...*/
     padding: 8px 18px;
     font-size: 16px;
-    border-radius: 20px; /* ขอบโค้งมน */
-    border: 2px solid #ffcc00; /* กรอบสีเหลือง */
-    background-color: #fff; /* พื้นหลังสีขาว */
-    width: 100%; /* ขยายความกว้างเต็มที่ */
-    max-width: 500px; /* จำกัดความกว้างสูงสุด */
-    margin: 10px auto; /* จัดให้อยู่กลางหน้า */
-    outline: none; /* ลบเส้นกรอบเมื่อคลิก */
-    transition: all 0.3s ease; /* การเปลี่ยนแปลงที่นุ่มนวล */
-    color: #333; /* สีตัวอักษร */
+    border-radius: 20px; 
+    border: 2px solid #ffcc00; 
+    background-color: #fff; 
+    width: 100%; 
+    max-width: 500px; 
+    margin: 10px auto;
+    outline: none; 
+    transition: all 0.3s ease; 
+    color: #333; 
 }
 
-
 .btn:hover {
-    background-color: #8279cb; /* สีเมื่อวางเมาส์ */
+    background-color: #8279cb; 
 }
 
 .back-home-btn {
-    background-color: #ffcc00; /* สีน้ำเงิน */
+    background-color: #ffcc00; 
     color: black;
     padding: 10px 15px;
     border: none;
     cursor: pointer;
     border-radius: 10px;
     font-size: 16px;
-    position: fixed; /* ใช้ตำแหน่ง fixed เพื่อให้ปุ่มอยู่ในตำแหน่งคงที่ */
-    top: 105px; /* ห่างจากด้านบน 20px */
-    left: 30px; /* ห่างจากด้านซ้าย 30px */
+    position: fixed; 
+    top: 105px; 
+    left: 30px; 
     transition: background-color 0.3s ease;
 }
 
 .back-home-btn:hover {
-    background-color: #002244; /* สีเมื่อวางเมาส์ */
+    background-color: #002244; 
 }
 
 .hotels {
@@ -351,43 +340,44 @@ input:checked + .slider::before {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 0px;
-    max-width: 1200px; /* ขนาดสูงสุด */
-    margin: 0 auto; /* จัดให้อยู่กลาง */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
-
 
 .hotel-card {
     background-color: #fff;
     padding: 10px;
-    border-radius: 20px; /* มุมโค้ง */
+    border-radius: 20px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     border: 1px solid #ccc;
     text-decoration: none;
 }
 .hotel-card:hover {
-    transform: scale(1.05); /* ขยายขนาดขึ้นเล็กน้อย */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    transform: scale(1.05); 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .hotel-card:active {
-    transform: scale(0.95); /* หดลงเล็กน้อยตอนกด */
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3); /* เงาลึกขึ้น */
+    transform: scale(0.95); 
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3); 
 }
 
-/* สไตล์ดาว */
 .star {
     color: gold;
     font-size: 20px;
 }
-
-.hotel-image {
-    width: 100%;  /* ให้ขยายตามความกว้างของกรอบ */
-    height: 200px;  /* กำหนดความสูงให้เท่ากันทุกภาพ */
-    object-fit: cover;  /* ป้องกันไม่ให้ภาพบิดเบือนหรือยืดหด */
-    border-radius: 8px;  /* มุมโค้งของภาพ */
+.star:last-child {
+    color: #ccc;
 }
 
+
+.hotel-image {
+    width: 100%;  
+    height: 200px;  
+    object-fit: cover; 
+    border-radius: 8px;  
+}
 
 .hotel-info {
     display: flex;
@@ -416,54 +406,38 @@ input:checked + .slider::before {
     margin-top: 2px;
 }
 
-.star {
-    color: gold;
-    font-size: 20px;
-}
-
-/* ใช้สีเทาสำหรับดาวที่ไม่เต็ม */
-.star:last-child {
-    color: #ccc;
-}
-
 .more-btn {
     background-color: #003366;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 20px; /* กรอบมุมโค้ง */
+    border-radius: 20px; 
     cursor: pointer;
     font-size: 16px;
-    margin-bottom: 20px; /* เพิ่มระยะห่างจากฟุตเตอร์ */
+    margin-bottom: 20px; 
     font-family: 'Itim', sans-serif; 
 }
 
-/* ใช้เมื่อคอนเทนเนอร์ของปุ่มต้องการการจัดเรียงกลาง */
-.button-container {
+.button-container { /*เลือกดูเพิ่มเติม*/
     display: flex;
-    justify-content: center; /* จัดให้อยู่กลางในแนวนอน */
-    align-items: center; /* จัดให้อยู่กลางในแนวตั้ง */
-    margin-top: 30px; /* เพิ่มระยะห่างจาก .hotels */
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 30px; 
 }
 
-
-
-/* เมื่อวางเมาส์บนปุ่ม */
 .more-btn:hover {
-    background-color: #002244; /* สีเมื่อวางเมาส์ */
+    background-color: #002244; 
 }
 
-
-/* ฟุตเตอร์ส่วนบน */
 footer {
-    background-color: #ffcc00; /* สีพื้นหลังของฟุตเตอร์ส่วนบน */
+    background-color: #ffcc00; 
     color: black;
     padding: 8px 60px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 คอลัมน์ */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    width: 100%; /* ขยายให้เต็มหน้าจอ */
-    box-sizing: border-box; /* รวม padding และ border ในขนาด */
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .footer-section {
@@ -477,8 +451,8 @@ footer {
 }
 
 .footer-section ul {
-    list-style-type: disc; /* เพิ่มจุดในรายการ */
-    padding-left: 20px; /* ระยะห่างของจุด */
+    list-style-type: disc; 
+    padding-left: 20px; 
 }
 
 .footer-section ul li {
@@ -494,39 +468,33 @@ footer {
     text-decoration: underline;
 }
 
-/* ฟุตเตอร์ล่าง */
-.footer-bottom {
-    background-color: #fef5e7; /* สีพื้นหลังของ footer-bottom */
+.footer-bottom { /* ฟุตเตอร์ล่าง */
+    background-color: #fef5e7; 
     color: black;
     padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* ขยายให้เต็มหน้าจอ */
-    box-sizing: border-box; /* รวม padding และ border ในขนาด */
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .social-icons {
     display: flex;
-    justify-content: center; /* จัดให้อยู่ตรงกลาง */
-    gap: 15px; /* ปรับระยะห่างระหว่างไอคอน */
+    justify-content: center; 
+    gap: 15px; 
 }
 
 .social-icons img {
-    width: 32px; /* ปรับขนาดไอคอน */
+    width: 32px;
     height: 32px;
     transition: transform 0.2s ease-in-out;
 }
 
 .social-icons img:hover {
-    transform: scale(1.1); /* ทำให้ขยายเล็กน้อยเวลา hover */
+    transform: scale(1.1); 
 }
 
-
-
-
-
-/* สำหรับแท็บเล็ต (หน้าจอขนาดไม่เกิน 1024px) */
 @media (max-width: 1024px) {
     .navbar {
         flex-direction: column;
@@ -535,11 +503,11 @@ footer {
     }
 
     .menu {
-        display: none; /* ซ่อนเมนูหลักและใช้แฮมเบอร์เกอร์เมนูแทน */
+        display: none; 
     }
 
     .hamburger-btn {
-        display: block; /* แสดงปุ่มแฮมเบอร์เกอร์ */
+        display: block; 
     }
 
     .search-bar {
@@ -553,11 +521,10 @@ footer {
     }
 
     footer {
-        grid-template-columns: repeat(2, 1fr); /* เปลี่ยนเป็น 2 คอลัมน์ */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-/* สำหรับโทรศัพท์มือถือ (หน้าจอขนาดไม่เกิน 768px) */
 @media (max-width: 768px) {
     .navbar {
         padding: 10px;
@@ -592,11 +559,11 @@ footer {
     }
 
     .hotels {
-        grid-template-columns: 1fr; /* เปลี่ยนเป็น 1 คอลัมน์ */
+        grid-template-columns: 1fr; 
     }
 
     footer {
-        grid-template-columns: 1fr; /* เหลือ 1 คอลัมน์ */
+        grid-template-columns: 1fr; 
         text-align: center;
     }
 
